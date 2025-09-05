@@ -12,7 +12,7 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable("${CMAKE_PROJECT_NAME}" WIN32 src/main.cpp src/Player.cpp src/Enemy.cpp src/Bullet.cpp src/Background.cpp)
+add_executable("${CMAKE_PROJECT_NAME}" WIN32 src/main.cpp src/Player.cpp src/Enemy.cpp src/Bullet.cpp)
 
 target_compile_features("${CMAKE_PROJECT_NAME}" PRIVATE cxx_std_17)
 target_include_directories("${CMAKE_PROJECT_NAME}" PRIVATE headers/)
